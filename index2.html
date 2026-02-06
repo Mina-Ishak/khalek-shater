@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#003775">
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="logo.png"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول الحصص</title>
+</head>
+<body>
+    <div class="input-group">
+        <input type="text" id="subjectInput" placeholder="المادة...">
+        <input type="number" id="periodInput" placeholder="الحصة (1-6)">
+        <select id="dayInput">
+            <option value="sat">السبت</option>
+            <option value="sun">الأحد</option>
+            <option value="mon">الإثنين</option>
+            <option value="tue">الثلاثاء</option>
+            <option value="wed">الأربعاء</option>
+            <option value="thu">الخميس</option>
+        </select>
+        <button id="addSchedBtn">إضافة للجدول</button>
+        <a class="a-home" href="index.html">الرئيسية</a>
+    </div>
+
+    <div class="timetable">
+        <div class="day-header">السبت</div>
+        <div class="day-header">الأحد</div>
+        <div class="day-header">الإثنين</div>
+        <div class="day-header">الثلاثاء</div>
+        <div class="day-header">الأربعاء</div>
+        <div class="day-header">الخميس</div>
+        <div id="sat-col" class="day-column"></div>
+        <div id="sun-col" class="day-column"></div>
+        <div id="mon-col" class="day-column"></div>
+        <div id="tue-col" class="day-column"></div>
+        <div id="wed-col" class="day-column"></div>
+        <div id="thu-col" class="day-column"></div>
+    </div>
+</div>
+</div>
+<script src="main2.js"></script>
+</body>
+</html>
